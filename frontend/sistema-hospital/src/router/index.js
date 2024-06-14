@@ -13,7 +13,9 @@ import tablaMedic from '@/components/tablamedicamentos.vue'
 import tablaCon from '@/components/tablaconsumibles.vue'
 import tablaLotes from '@/components/tablalotes.vue'
 import tablaDis from'@/components/tabladispensacion.vue'
-import footer from '@/components/Pie-Pagina.vue'
+//import footer from '@/components/Pie-Pagina.vue'
+import piePaginaView from '@/components/piePagina.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,9 +31,9 @@ const router = createRouter({
       component:registerUser
     },
     {
-      path: '/footer',
-      name: 'footer',
-      component:footer
+      path: '/piePagina',
+      name: 'PiePagina',
+      component:piePaginaView
     },
     {
       path: '/home',
