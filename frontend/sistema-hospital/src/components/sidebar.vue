@@ -296,5 +296,17 @@
 
    <div class="p-4 sm:ml-64">
       <router-view/>
-     
-</div></template>
+   </div>
+   <piePaginaView style="position: fixed; bottom: 0; width: 100%;" ></piePaginaView>
+</template>
+
+<script>
+
+import piePaginaView from './piePagina.vue'
+
+export default{
+   components:{
+      piePaginaView
+   }
+}
+</script>
